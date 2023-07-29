@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    /* opacity: 0; */
+}
+
+.about-me-img {
+    height: 500px;
+    min-width: 300px;
+    object-position: bottom;
+    object-fit: cover;
+    box-shadow: 5px 5px 20px #555;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.img-container {
+    position: relative;
+}
+
+.rotated-bg {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #1584e6;
+    z-index: -1;
+    transform-origin: bottom;
+    transform: rotate(-30deg) scaleX(3) scaleY(5) translateY(20px);
+}
+
+.about-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.name {
+    position: absolute;
+    bottom: 3rem;
+    left: 1rem;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.about-text {
+    color: #777;
+    font-size: 1.5rem;
+}
+
+header .links {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.links svg {
+    height: 100%;
+}
+
+header {
+    margin: 3rem 30px;
+}
+
+main {
+    margin: 0 30px;
+    margin-bottom: 6rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem 3rem;
+}
+
+.project {
+    box-shadow: 3px 3px 10px black;
+}
+
+.project-info {
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: 1fr 6rem;
+    grid-template-rows: 2rem 1fr;
+    gap: 0.5rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2rem;
+}
+
+.project-links svg {
+    height: 80%;
+}
+
+.project-desc {
+    grid-column: 1/-1;
+    min-height: 80px;
+    color: #777;
+}
+
+.contact-me {
+    background-color: #1584e6;
+    color: white;
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+
+footer h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+footer .links {
+    color: black;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.contact-req {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.address {
+    margin: 1.25rem 0;
+}
+
+.phone-number, .email-address {
+    margin: 0.5rem 0;
+}
